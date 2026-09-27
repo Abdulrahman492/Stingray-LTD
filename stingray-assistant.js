@@ -74,7 +74,7 @@
   function md(s){
     s=esc(s);
     s=s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,function(m,t,u){
-      if(/^[\w-]+\.html(#[\w-]+)?$/.test(u)||/^#[\w-]+$/.test(u)||/^mailto:[^\s]+$/.test(u))return '<a href="'+u+'">'+t+'</a>';
+      if(/^[\w-]+\.html(#[\w-]+)?$/.test(u)||/^#[\w-]+$/.test(u)||/^mailto:[^\s]+$/.test(u)||/^https:\/\/abdulrahman492\.github\.io\/Stingray-LTD\//.test(u))return '<a href="'+u+'">'+t+'</a>';
       return t;});
     s=s.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
     s=s.replace(/([\w.+-]+@[\w-]+\.[\w.]+)(?![^<]*<\/a>)/g,'<a href="mailto:$1">$1</a>');
